@@ -13,3 +13,18 @@
 4：将本机的`dns`服务器设置为 `127.0.0.1` ，如果是其他局域网设备则填本机的`IP`地址，不在局域网的设备则填本机的公网`IP`。
 
 5：如果更换了反代IP，则需清除dns缓存，命令：`ipconfig /flushdns`，反代IP尽量选择地理位置离你近的，并且只能解锁没有被墙的网站。
+
+## 3xui配置
+
+- 增加 DNS 配置
+
+```
+hosts: 定义了一些特定域名的 IP 地址映射。
+
+geosite:netflix 和 geosite:disney 的 DNS 请求将被解析为 6.6.6.6。
+```
+```
+servers: 配置了用于 DNS 解析的服务器。
+
+8.8.8.8（Google DNS）和 1.1.1.1（Cloudflare DNS）。
+```
