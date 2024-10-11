@@ -30,3 +30,36 @@ servers: 配置了用于 DNS 解析的服务器。
 
 8.8.8.8（Google DNS）和 1.1.1.1（Cloudflare DNS）。
 ```
+
+
+
+## 劫持cookie实现免费观看netflix
+
+- [下载中间人劫持工具](https://github.com/zu1k/Good-MITM/releases)
+
+Linux一般下载`good-mitm-0.4.2-x86_64-unknown-linux-gnu.tar.xz`这个版本，win系统下载`good-mitm-0.4.2-x86_64-pc-windows-gnu.zip`这个版本
+
+- 解压
+```
+xz -d good-mitm-0.4.2-x86 64-unknown-linux-gnu.tar.xz
+tar -xvf good-mitm-0.4.2-x86 64-unknown-linux-gnu.tar
+```
+
+- 创建配置文件
+```
+touch netflix.yaml
+```
+将配置文件复制进去，并替换相应的`cookie`
+
+
+- 生成证书
+```
+./good-mitm genca
+```
+
+- 后台运行
+```
+nohup ./good-mitm run -r netflix.yaml > goodmitm.log 2>&1 &
+```
+
+此时`good-mitm`程序会开放`34567`端口，将出站奈飞的流量路由到这个端口的地址即可，地址`127.0.0.1:34567`
