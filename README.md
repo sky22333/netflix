@@ -51,6 +51,11 @@ touch netflix.yaml
 ```
 将配置文件复制进去，并替换相应的`cookie`
 
+浏览器`F12`查找奈飞的`cookie`将下面两个的值替换进去
+```
+SecureNetflixld
+Netflixld
+```
 
 - 生成证书
 ```
