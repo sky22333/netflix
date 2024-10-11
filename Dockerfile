@@ -10,7 +10,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # 克隆项目
-RUN git clone https://github.com/zu1k/Good-MITM.git .
+RUN git clone https://github.com/zu1k/Good-MITM.git
 
 # 设置工作目录
 WORKDIR Good-MITM
