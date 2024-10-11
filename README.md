@@ -37,7 +37,9 @@ servers: 配置了用于 DNS 解析的服务器。
 
 - [下载中间人劫持工具](https://github.com/zu1k/Good-MITM/releases)
 
-Linux一般下载`good-mitm-0.4.2-x86_64-unknown-linux-gnu.tar.xz`这个版本，win系统下载`good-mitm-0.4.2-x86_64-pc-windows-gnu.zip`这个版本
+- Linux一般下载`good-mitm-0.4.2-x86_64-unknown-linux-gnu.tar.xz`这个版本
+
+- win系统下载`good-mitm-0.4.2-x86_64-pc-windows-gnu.zip`这个版本
 
 - 解压
 ```
