@@ -8,7 +8,7 @@
 
 2：打开`Acrylic`，点击 `File `再点击 `Open Acrylic Configuration` 打开配置文件，将第`12`行的 `8.8.8.8` 改为你的默认网关，将倒数第`6`行复制到最后一行，按 `Ctrl + S` 保存。
 
-3：再打开 `Open Acrylic Hosts`配置， 修改 `Hosts`，将本仓库的 `Hosts` 文件复制，**粘贴到最下面**，然后替换成`sni反`IP`，按 `Ctrl + S` 保存。
+3：再打开 `Open Acrylic Hosts`配置， 修改 `Hosts`，将本仓库的 `Hosts` 文件复制，**粘贴到最下面**，然后替换成`sni反代IP`，然后按 `Ctrl + S` 保存。
 
 4：将本机的`dns`服务器设置为 `127.0.0.1` ，如果是其他局域网设备则填本机的`IP`地址，不在局域网的设备则填本机的公网`IP`。
 
