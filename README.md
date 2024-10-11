@@ -31,7 +31,7 @@ servers: 配置了用于 DNS 解析的服务器。
 8.8.8.8（Google DNS）和 1.1.1.1（Cloudflare DNS）。
 ```
 
-
+--- 
 
 ## 劫持cookie实现免费观看netflix
 
@@ -62,4 +62,4 @@ touch netflix.yaml
 nohup ./good-mitm run -r netflix.yaml > goodmitm.log 2>&1 &
 ```
 
-此时`good-mitm`程序会开放`34567`端口，将出站奈飞的流量路由到这个端口的地址即可，地址`127.0.0.1:34567`
+此时`good-mitm`程序会开放`34567`端口，将出站的`netflix`流量路由到这个端口的地址即可，地址`127.0.0.1:34567`
