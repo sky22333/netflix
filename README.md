@@ -16,19 +16,51 @@
 
 ---
 
-## 3xui配置
+## Linux配置
 
-- 增加 DNS 配置
+- 安装`dnsmasq`服务
 
 ```
-hosts: 定义了一些特定域名的 IP 地址映射。
-
-geosite:netflix 和 geosite:disney 的 DNS 请求将被解析为 6.6.6.6。
+安装
+sudo apt install dnsmasq -yq
+重启
+sudo systemctl restart dnsmasq
+设置开机自启
+sudo systemctl enable dnsmasq
+检查状态
+sudo systemctl status dnsmasq
 ```
-```
-servers: 配置了用于 DNS 解析的服务器。
 
-8.8.8.8（Google DNS）和 1.1.1.1（Cloudflare DNS）。
+- 编辑`/etc/dnsmasq.conf`配置
+```
+listen-address=127.0.0.1  # 只监听本地DNS查询
+no-resolv  # 不使用系统默认的 DNS
+server=8.8.8.8  # 默认外部DNS解析服务器
+
+# 将多个域名解析为指定 IP
+address=/.cloudfront.net/203.137.98.127
+address=/.netflix.com/203.137.98.127
+address=/.netflix.net/203.137.98.127
+address=/.nflximg.com/203.137.98.127
+address=/.nflximg.net/203.137.98.127
+address=/.nflxvideo.net/203.137.98.127
+address=/.nflxso.net/203.137.98.127
+address=/.nflxext.com/203.137.98.127
+address=/.ai.com/203.137.98.127
+address=/.openai.com/203.137.98.127
+address=/.chatgpt.com/203.137.98.127
+address=/chatgpt.com/203.137.98.127
+address=/.fast.com/203.137.98.127
+```
+
+- 编辑`/etc/resolv.conf`系统DNS配置文件
+```
+nameserver 127.0.0.1
+```
+
+- 重启`dnsmasq`
+```
+sudo systemctl restart dnsmasq
 ```
 
 --- 
