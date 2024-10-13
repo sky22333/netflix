@@ -46,10 +46,6 @@ address=/.nflximg.net/203.137.98.127
 address=/.nflxvideo.net/203.137.98.127
 address=/.nflxso.net/203.137.98.127
 address=/.nflxext.com/203.137.98.127
-address=/.ai.com/203.137.98.127
-address=/.openai.com/203.137.98.127
-address=/.chatgpt.com/203.137.98.127
-address=/chatgpt.com/203.137.98.127
 address=/.fast.com/203.137.98.127
 ```
 
