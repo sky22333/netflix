@@ -1,8 +1,10 @@
-## sni反代解锁netflix
+## SNI反代解锁netflix
 
 - [点击获取sni反代IP](https://fofa.info/result?qbase64=Ym9keT0iQmFja2VuZCBub3QgYXZhaWxhYmxlIg%3D%3D)
 
-- [点击下载Acrylic（DNS服务）](https://mayakron.altervista.org/support/acrylic/Home.htm)
+### Windows配置
+
+[下载Acrylic（DNS服务）](https://mayakron.altervista.org/support/acrylic/Home.htm)
 
 1：win系统命令行输入`ipconfig`查看默认默认网关，打开`AcrylicUI.exe`
 
@@ -14,9 +16,7 @@
 
 5：如果更换了反代IP，则需清除dns缓存，命令：`ipconfig /flushdns`，反代IP尽量选择地理位置离你近的，并且只能解锁没有被墙的网站。
 
----
-
-## Linux配置
+### Linux配置
 
 - 安装`dnsmasq`服务
 
@@ -60,6 +60,8 @@ sudo systemctl restart dnsmasq
 ```
 
 --- 
+---
+
 
 ## 劫持cookie实现免费观看netflix
 
