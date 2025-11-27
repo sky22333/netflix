@@ -1,4 +1,4 @@
-## SNI反代解锁netflix
+## SNI反代解锁netflix和openai
 
 - [获取免费sni反代IP](https://fofa.info/result?qbase64=Ym9keT0iQmFja2VuZCBub3QgYXZhaWxhYmxlIg%3D%3D)
 - [自建DNS解锁服务器](https://github.com/myxuchangbin/dnsmasq_sniproxy_install)
