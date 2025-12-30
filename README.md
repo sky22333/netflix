@@ -17,8 +17,14 @@
 
 5：如果更换了反代IP，则需清除dns缓存，命令：`ipconfig /flushdns`，反代IP尽量选择地理位置离你近的，并且只能解锁没有被墙的网站。
 
-### Linux配置
 
+#### DNS解锁一键脚本
+```
+bash <(curl -sSL https://raw.githubusercontent.com/sky22333/netflix/main/install.sh)
+```
+> 支持追加IP：`-ip 6.6.6.6`
+
+### Linux手动配置
 - 安装`dnsmasq`服务
 
 ```
