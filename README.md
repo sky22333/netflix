@@ -7,6 +7,8 @@
 
 [下载Acrylic（DNS服务）](https://mayakron.altervista.org/support/acrylic/Home.htm)
 
+[或者使用Adguardhome](https://github.com/AdguardTeam/Adguardhome)
+
 1：win系统命令行输入`ipconfig`查看默认默认网关，打开`AcrylicUI.exe`
 
 2：打开`Acrylic`，点击 `File `再点击 `Open Acrylic Configuration` 打开配置文件，将第`12`行的 `8.8.8.8` 改为你的默认网关，将倒数第`6`行复制到最后一行，按 `Ctrl + S` 保存。
